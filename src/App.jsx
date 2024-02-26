@@ -1,13 +1,15 @@
 
 import './App.css'
+import ItemListContainer from './components/ItemListContainer.jsx';
 import Navbar from './components/Navbar.jsx';
-import TemplateBody from './components/TemplateBody.jsx';
+
 function App() {
 
   return (
     <>
         <Navbar></Navbar>
-        <TemplateBody></TemplateBody>
+        <ItemListContainer greeting="¡Hola!, Bienvenido a tu tienda virtual 🔥🚀"></ItemListContainer>
+
         
     </>
   )

@@ -41,7 +41,7 @@
     left:30px;
 }
 
-#itemsContainer li:hover{
+#serviceContainer li:hover{
     cursor:pointer;
     color:orange;
 }
