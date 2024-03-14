@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar.jsx';
 import ItemListContainer from './components/ItemListContainer.jsx';
 import ItemCount from './components/ItemCount.jsx';
+import ItemContainer from './components/ItemContainer.jsx';
 
 
 
@@ -12,12 +13,8 @@ function App() {
     <>
         <Navbar></Navbar>
         <ItemListContainer greeting="¡Hola!, Bienvenido a tu tienda virtual 🔥🚀"></ItemListContainer>
-        <ItemCount 
-        initial={0}
-        stock={10}
-        onAdd={(count)=> console.log('Cantidad agregada', count)}></ItemCount>
 
-        
+      <ItemContainer></ItemContainer>
     </>
   )
 }

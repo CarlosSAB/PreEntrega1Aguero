@@ -14,13 +14,14 @@ const ItemCount = ({initial,stock,onAdd}) => {
 
   return (
     <>
-      <div className="container text-center p-5">
+      <div className="CajaContador py-3">
+        <p style={{fontSize: ".7rem"}} className="pb-2">Quantity: {stock}</p>
         <div className="d-flex align-items-center justify-content-center">
-          <button className="btn btn-primary" onClick={increment}>+</button>
-          <p className="px-5 fs-2 fw-bold">{count}</p>
-          <button className="btn btn-primary" onClick={decrement}>-</button>
+          <button className="botones" onClick={increment}>+</button>
+          <p className="px-2" style={{width:"33.25px",textAlign:"center"}}>{count}</p>
+          <button className="botones" onClick={decrement}>-</button>
         </div>
-        <button className="btn btn-primary my-3"onClick={()=>onAdd(count)} disabled={!stock}>Agregar al carrito</button>
+        {/* <button className="btn  my-3"onClick={()=>onAdd(count)} disabled={!stock}>Agregar al carrito</button> */}
       </div>
     </>
   );
