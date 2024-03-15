@@ -1,25 +1,16 @@
-
-import './App.css'
-import Navbar from './components/Navbar.jsx';
-import ItemListContainer from './components/ItemListContainer.jsx';
-import ItemCount from './components/ItemCount.jsx';
-import ItemContainer from './components/ItemContainer.jsx';
-import Peticiones from './components/Peticiones.jsx';
-
-
+import "./App.css";
+import Navbar from "./components/Navbar.jsx";
+import ItemListContainer from "./components/ItemListContainer.jsx";
+import ProductosContainer from "./components/ProductosContainer.jsx";
 
 function App() {
-
   return (
     <>
-        <Navbar></Navbar>
-        <ItemListContainer greeting="¡Hola!, Bienvenido a tu tienda virtual 🔥🚀"></ItemListContainer>
-      <ItemContainer></ItemContainer>
-      <Peticiones></Peticiones>
-  
-
+      <Navbar></Navbar>
+      <ItemListContainer greeting="¡Hola!, Bienvenido a tu tienda virtual 🔥🚀"></ItemListContainer>
+      <ProductosContainer></ProductosContainer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
