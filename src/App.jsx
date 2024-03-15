@@ -7,6 +7,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
+      <h1>Holaaaa</h1>
       <ItemListContainer greeting="¡Hola!, Bienvenido a tu tienda virtual 🔥🚀"></ItemListContainer>
       <ProductosContainer></ProductosContainer>
     </>
