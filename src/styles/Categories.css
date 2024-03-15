@@ -1,0 +1,8 @@
+.buttonCategory{
+    border:none;
+    padding: 8px 15px;
+    border-radius: 2px;
+    color:white;
+    background: black;
+    font-size: 10px;
+}

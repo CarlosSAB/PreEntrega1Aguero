@@ -5,7 +5,7 @@ import ItemCount from "../components/ItemCount.jsx";
 const ItemContainer = ({productos}) => {
   return (
     <>
-      <div className="gridContainer gap-2  py-5 container-md">
+      <div className="gridContainer gap-2  pb-5 container-md">
         {productos
         .filter(item => item.category === "CALZADO")
         .map((item) => (
