@@ -7,7 +7,7 @@ const ItemContainer = ({productos}) => {
     <>
       <div className="gridContainer gap-2  pb-5 container-md">
         {productos
-        .filter(item => item.category === "CALZADO")
+        // .filter(item => item.category === "TSHIRT")
         .map((item) => (
           <div className="cardContainer" key={item.item_id}>
             <div className="containerImg">

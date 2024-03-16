@@ -8,11 +8,11 @@ const Categories = () => {
           <h5 className="fw-light">EXPLORE</h5>
           <h5 className="fw-bold pb-2">Our Collection</h5>
         </div>
-        <div className="d-flex flex-row gap-2">
-            <p>Calzado</p>
-            <p>T-shirt</p>
-            <p>Poleras</p>
-            <p>Accesorios</p>
+        <div className="d-flex flex-row gap-4 fw-bold">
+            <p className="categories">Calzado</p>
+            <p className="categories">T-shirt</p>
+            <p className="categories">Poleras</p>
+            <p className="categories">Accesorios</p>
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "caterogy": "T-SHIRT",
+      "category": "TSHIRT",
       "item_id": 1,
       "descriptionItem": "SET CONJUNTO ADIDAS",
       "subdescription": "T-SHIRT",
@@ -116,7 +116,107 @@
       "price": 399,
       "stockItem": 7,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/76f06cd178364ca48437ffec7614396b_9366/RIVALRY_LOW_Azul_IF6248_01_standard.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 8,
+      "descriptionItem": "M D2M POLO",
+      "subdescription": "T-SHIRT",
+      "price": 159,
+      "stockItem": 12,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bb63176c44374e019a41af1c01024c80_9366/M_D2M_POLO_Azul_IB8236_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 9,
+      "descriptionItem": "POLO SPORT GRAPHIC CALI",
+      "subdescription": "T-SHIRT",
+      "price": 129,
+      "stockItem": 15,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/20e9f7cbed264338b771a403f57d2253_9366/Polo_Sport_Graphic_Cali_Blanco_IU0217_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 10,
+      "descriptionItem": "POLO DESIGNED FOR TRAINING",
+      "subdescription": "T-SHIRT",
+      "price": 189,
+      "stockItem": 35,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d5925203349749dbb1beb91110e335c4_9366/Polo_de_entrenamiento_Designed_for_Training_Plomo_IS3814_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 11,
+      "descriptionItem": "POLO ADICOLOR CLASSICS 3 TIRAS",
+      "subdescription": "T-SHIRT",
+      "price": 129,
+      "stockItem": 10,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/29b19794fa92419dbc6caf3b008ddf11_9366/Polo_Adicolor_Classics_3_Tiras_Negro_IA4845_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 12,
+      "descriptionItem": "POLO TRAINING SUPPLY",
+      "subdescription": "T-SHIRT",
+      "price": 129,
+      "stockItem": 10,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d1fc556c385c41289654ac6de030bcd0_9366/Polo_Manga_Corta_Training_Supply_Verde_IS0232_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 13,
+      "descriptionItem": "OTR B LS",
+      "subdescription": "T-SHIRT",
+      "price": 189,
+      "stockItem": 13,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9b5fb5be34d8488184108230d4429dee_9366/OTR_B_LS_Azul_IN1488_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 14,
+      "descriptionItem": "POLO DESIGNED FOR MOVEMEN",
+      "subdescription": "T-SHIRT",
+      "price": 119,
+      "stockItem": 20,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8b5b94ff3c674396ab837cd2b762726a_9366/Polo_AEROREADY_Designed_for_Movement_Plomo_IL1453_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 15,
+      "descriptionItem": "POLO DE TENIS CLUB 3 TIRAS",
+      "subdescription": "T-SHIRT",
+      "price": 129,
+      "stockItem": 20,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0dd1ec9e98cf4e16b58caf31010885f0_9366/Polo_de_Tenis_Club_3_Tiras_Negro_HS3262_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 16,
+      "descriptionItem": "POLO DE TENIS CLUB 3 TIRAS",
+      "subdescription": "T-SHIRT",
+      "price": 129,
+      "stockItem": 20,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fe57889090c045429041b0151eb59b16_9366/Polo_Own_the_Run_Azul_IN1515_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 16,
+      "descriptionItem": "POLO DE TENIS CLUB 3 TIRAS",
+      "subdescription": "T-SHIRT",
+      "price": 129,
+      "stockItem": 20,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/349decd34a874760bddcaf2d00df0eff_9366/Polo_de_Tenis_Club_3_Tiras_Blanco_HS3261_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 16,
+      "descriptionItem": "GRAPHIC TEE",
+      "subdescription": "T-SHIRT",
+      "price": 199,
+      "stockItem": 20,
+      "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0e047936840f48af9a54102f0e13117b_9366/GRAPHIC_TEE_Negro_JF2852_21_model.jpg"
     }
 
+    
   ]
 }
