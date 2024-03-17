@@ -5,12 +5,12 @@ const Calzado = ({message,itemCategories}) => {
 
     return (
         <>
-            <div className="d-flex flex-row  justify-content-center container py-3">
+            <div className="d-flex flex-row  justify-content-between container-md py-3">
                 <Titulo message={message} />
                 <Categories itemCategories={itemCategories}></Categories>
 
             </div>
-            <ItemContainer filtro="CALZADO" />
+            <ItemContainer filtro="SHOES" />
         </>
 
     )

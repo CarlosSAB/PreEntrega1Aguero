@@ -1,125 +1,117 @@
 {
   "products": [
+
     {
-      "category": "TSHIRT",
-      "item_id": 1,
-      "descriptionItem": "SET CONJUNTO ADIDAS",
-      "subdescription": "T-SHIRT",
-      "price": 150,
-      "stockItem": 15,
-      "urlImagen": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/214c5e22d3554a53b6625af8b4641a5d_9366/polo-adidas-basketball-001_.jpg"
-    },
-    {
-      "category": "CALZADO",
-      "item_id": 2,
+      "category": "SHOES",
+      "item_id": 29,
       "descriptionItem": "ZAPATILLAS MAMBO",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 175,
       "stockItem": 10,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Zapatillas_Samba_OG_Blanco_B75806_01_standard.jpg"
     },
     {
-      "category": "CALZADO",
+      "category": "SHOES",
       "item_id": 3,
       "descriptionItem": "ZAPATILLAS MAMBO UNLIMITED",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 210,
       "stockItem": 5,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/92ffc42c863b4d3b85a04a517d00e765_9366/Zapatillas_Gazelle_Bold_Rosado_IE0420_01_standard.jpg"
     },
     {
-      "category": "CALZADO",
+      "category": "SHOES",
       "item_id": 4,
       "descriptionItem": "ZAPATILLAS MIDCITY LOW",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 349,
       "stockItem": 20,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/03d2798110434dd7a20d7c69395f56fb_9366/Zapatillas_Midcity_Low_Plomo_IG8523_01_standard.jpg"
     },
     {
-      "category": "CALZADO",
+      "category": "SHOES",
       "item_id": 5,
       "descriptionItem": "FORUM LOW CL",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 429,
       "stockItem": 8,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1822e1180d644baca09724689c16721f_9366/FORUM_LOW_CL_Blanco_IG3777_01_standard.jpg"
     },
     {
-      "category": "CALZADO",
-      "item_id": 6,
+      "category": "SHOES",
+      "item_id": 37,
       "descriptionItem": "RIVALRY LOW",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 399,
       "stockItem": 24,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/72aaab01c78d47fdb88f95a5137ea325_9366/RIVALRY_LOW_Rojo_IF6249_01_standard.jpg"
     },
     {
-      "category": "CALZADO",
+      "category": "SHOES",
       "item_id": 7,
       "descriptionItem": "ZAPATILLAS SUPERSTAR",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 359,
       "stockItem": 24,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5adb45cc3a6f4a4db3be8be6d02e844b_9366/Zapatillas_Superstar_Negro_IF3641_01_standard.jpg"
     },
     {
-      "category": "CALZADO",
+      "category": "SHOES",
       "item_id": 8,
       "descriptionItem": "ZAPATILLAS ADIMATIC",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 359,
       "stockItem": 12,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/af46486f1e8f4f82956bfc7cc9ecff94_9366/Zapatillas_Adimatic_Plomo_ID8266_01_standard.jpg"
     },
     {
-      "category": "CALZADO",
+      "category": "SHOES",
       "item_id": 9,
       "descriptionItem": "ZAPATILLAS FEAR OF GOD",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 649,
       "stockItem": 13,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f1174b0510c6427abbe5991f666c53b7_faec/Zapatillas_Fear_of_God_Athletics_Los_Angeles_Marron_IF4215_HM1.jpg"
     },
     {
-      "category": "CALZADO",
+      "category": "SHOES",
       "item_id": 10,
       "descriptionItem": "FORUM LOW CL",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 429,
       "stockItem": 5,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8b18a7bd4ad249b68939140a279f34bf_9366/FORUM_LOW_CL_Blanco_IG3778_01_standard.jpg"
     },
     {
-      "category": "CALZADO",
+      "category": "SHOES",
       "item_id": 11,
       "descriptionItem": "ZAPATILLAS HARDEN VOLUME 8",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 799,
       "stockItem": 10,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7cac1a06dcb34466b2c87fe416709677_9366/Zapatillas_Harden_Volume_8_Blanco_IE2695_01_standard.jpg"
     },
     {
-      "category": "CALZADO",
+      "category": "SHOES",
       "item_id": 12,
       "descriptionItem": "ZAPATILLAS CAMPUS 00S",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 429,
       "stockItem": 3,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6780796a2c024d0bb23b1a6ed7fd5347_9366/Zapatillas_Campus_00s_Azul_IF8773_01_standard.jpg"
     },
     {
-      "category": "CALZADO",
+      "category": "SHOES",
       "item_id": 13,
       "descriptionItem": "RIVALRY LOW",
-      "subdescription": "CALZADO",
+      "subdescription": "SHOES",
       "price": 399,
       "stockItem": 7,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/76f06cd178364ca48437ffec7614396b_9366/RIVALRY_LOW_Azul_IF6248_01_standard.jpg"
     },
     {
       "category": "TSHIRT",
-      "item_id": 14,
+      "item_id": 1,
       "descriptionItem": "M D2M POLO",
       "subdescription": "T-SHIRT",
       "price": 159,
@@ -137,7 +129,7 @@
     },
     {
       "category": "TSHIRT",
-      "item_id": 16,
+      "item_id": 26,
       "descriptionItem": "POLO DESIGNED FOR TRAINING",
       "subdescription": "T-SHIRT",
       "price": 189,
@@ -215,8 +207,16 @@
       "price": 199,
       "stockItem": 20,
       "urlImagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0e047936840f48af9a54102f0e13117b_9366/GRAPHIC_TEE_Negro_JF2852_21_model.jpg"
+    },
+    {
+      "category": "TSHIRT",
+      "item_id": 25,
+      "descriptionItem": "SET CONJUNTO ADIDAS",
+      "subdescription": "T-SHIRT",
+      "price": 150,
+      "stockItem": 15,
+      "urlImagen": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/214c5e22d3554a53b6625af8b4641a5d_9366/polo-adidas-basketball-001_.jpg"
     }
-
     
   ]
 }
