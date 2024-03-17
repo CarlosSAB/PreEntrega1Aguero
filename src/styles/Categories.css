@@ -7,12 +7,21 @@
     font-size: 10px;
 }
 
-a{
+.categories{
     text-decoration: none;
     color:black
 }
 
 .categories:hover{
-    color:rgb(90, 186, 218);
-    cursor:pointer;
+    color:rgb(1, 73, 167);
+
+}
+
+.navbarCategories{
+    color:white;
+    text-decoration: none;
+}
+
+.navbarCategories:hover{
+    color:rgb(1, 73, 167);
 }

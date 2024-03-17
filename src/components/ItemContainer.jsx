@@ -39,7 +39,7 @@ const ItemContainer = ({filtro}) => {
 
           productos
 
-            .filter(item => item.category === filtro)
+            .filter(item => !filtro || filtro === "TODO" || item.category === filtro)
             .map((item) => (
               <div className="cardContainer" key={item.item_id}>
                 <div className="containerImg">

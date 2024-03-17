@@ -1,11 +1,18 @@
 import ItemContainer from "../components/ItemContainer"
+import Titulo from "../components/Titulo";
+import Categories from "../components/Categories";
+const Calzado = ({message,itemCategories}) => {
 
+    return (
+        <>
+            <div className="d-flex flex-row  justify-content-center container py-3">
+                <Titulo message={message} />
+                <Categories itemCategories={itemCategories}></Categories>
 
-const Calzado = ()=>{
+            </div>
+            <ItemContainer filtro="CALZADO" />
+        </>
 
-    return(
-
-        <ItemContainer filtro="CALZADO"></ItemContainer>
     )
 }
 
