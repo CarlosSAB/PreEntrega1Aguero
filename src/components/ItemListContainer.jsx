@@ -3,7 +3,7 @@ import React from 'react'
 function ItemListContainer({greeting}) {
   return (
     <>
-      <div className='text-center py-2 bg-warning fw-bold'>
+      <div className='text-center py-1 bg-warning fw-bold'>
         <p>{greeting}</p>
       </div>
     </>

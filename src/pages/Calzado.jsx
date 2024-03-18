@@ -1,19 +1,18 @@
-import ItemContainer from "../components/ItemContainer"
-import Titulo from "../components/Titulo";
-import Categories from "../components/Categories";
-const Calzado = ({message,itemCategories}) => {
+import ItemContainer from "../components/ItemContainer";
+import Titulo from "../components/Titulo.jsx";
 
-    return (
-        <>
-            <div className="d-flex flex-row  justify-content-between container-md py-3">
-                <Titulo message={message} />
-                <Categories itemCategories={itemCategories}></Categories>
 
-            </div>
-            <ItemContainer filtro="SHOES" />
-        </>
 
-    )
-}
+
+const Calzado = ({ message, itemCategories }) => {
+  return (
+    <>
+      <div className="d-flex flex-column w-100">
+        <Titulo message={message}></Titulo>
+        <ItemContainer filtro="SHOES" />
+      </div>
+    </>
+  );
+};
 
 export default Calzado;
