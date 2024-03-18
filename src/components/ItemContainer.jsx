@@ -33,7 +33,7 @@ const ItemContainer = ({filtro}) => {
 
   return (
     <>
-      <div className="gridContainer gap-2  pb-5 container-md">
+      <div className="gridContainer gap-2  pb-5 ">
 
         {
 
