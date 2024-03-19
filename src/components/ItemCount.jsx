@@ -7,8 +7,7 @@ import * as React from "react";
 import { Button } from "@mui/material";
 import ButtonGroup from "@mui/material/ButtonGroup";
 
-const ItemCount = ({ initial, stock,descriptionItem,priceItem,onAddToCart}) => {
-
+const ItemCount = ({ initial, stock, descriptionItem, priceItem }) => {
   //Funciones y estados para modificar el Contador de items
   const [count, setCount] = useState(0);
 
@@ -20,13 +19,21 @@ const ItemCount = ({ initial, stock,descriptionItem,priceItem,onAddToCart}) => {
     count > initial ? setCount(count - 1) : setCount(stock);
   };
 
+  //Funcion del botón ADD TO CART
 
-//Funcion del botón ADD TO CART
-
- const addToCart  =(value)=>{
-     (value > 0) ? console.log(`Producto agregado: ${descriptionItem} , Precio: ${priceItem} cantidad agregada : ${value} total: S/.${value*priceItem}`) :  console.log("No items added");
-
+  const addToCart = (value) => {
+    if (value > 0) {
+      const argumento = {
+        description: descriptionItem,
+        quantity: value,
+        price: priceItem,
+        total: priceItem * value,
+      };
+      console.log(argumento);
+    } else {
+      console.log("No items selected");
     }
+  };
 
   return (
     <>
@@ -37,7 +44,6 @@ const ItemCount = ({ initial, stock,descriptionItem,priceItem,onAddToCart}) => {
         sx={{
           width: "100%",
         }}
-        
       >
         <Button
           sx={{
@@ -71,7 +77,7 @@ const ItemCount = ({ initial, stock,descriptionItem,priceItem,onAddToCart}) => {
         }}
         startIcon={<ShoppingCartIcon />}
         variant="outlined"
-        onClick={()=> addToCart(count)}
+        onClick={() => addToCart(count)}
       >
         ADD TO CART
       </Button>

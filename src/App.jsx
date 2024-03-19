@@ -1,6 +1,4 @@
 import "./App.css";
-
-import ItemListContainer from "./components/ItemListContainer.jsx";
 import Tshirt from "./pages/Tshirt.jsx";
 import Calzado from "./pages/Calzado.jsx";
 import All from "./pages/All.jsx";
@@ -37,50 +35,14 @@ function App() {
   return (
     <>
       <NavbarUI></NavbarUI>
-      {/* <Navbar itemCategories={itemCategories}></Navbar> */}
-      <ItemListContainer greeting="¡Hola!, Bienvenido a tu tienda virtual 🔥🚀"></ItemListContainer>
       <div className="d-flex flex-row  gap-4 pb-5 px-5">
-        <FilterCategories 
-        itemCategories={itemCategories}></FilterCategories>
+        <FilterCategories itemCategories={itemCategories}></FilterCategories>
+        
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <All
-                  message={itemCategories[0]}
-                  itemCategories={itemCategories}
-                />
-              </>
-            }
-          />
-          <Route
-            path="/All"
-            element={
-              <All
-                message={itemCategories[0]}
-                itemCategories={itemCategories}
-              />
-            }
-          />
-          <Route
-            path="/calzado"
-            element={
-              <Calzado
-                message={itemCategories[1]}
-                itemCategories={itemCategories}
-              ></Calzado>
-            }
-          ></Route>
-          <Route
-            path="/tshirt"
-            element={
-              <Tshirt
-                message={itemCategories[2]}
-                itemCategories={itemCategories}
-              ></Tshirt>
-            }
-          ></Route>
+          <Route path="/" element={<All  message={itemCategories[0]} itemCategories={itemCategories}/>}/>
+          <Route path="/All" element={<All message={itemCategories[0]} itemCategories={itemCategories}/>}/>
+          <Route path="/calzado" element={<Calzado message={itemCategories[1]} itemCategories={itemCategories}></Calzado>} /> 
+          <Route path="/tshirt" element={<Tshirt message={itemCategories[2]} itemCategories={itemCategories}></Tshirt>}  /> 
         </Routes>
       </div>
     </>
