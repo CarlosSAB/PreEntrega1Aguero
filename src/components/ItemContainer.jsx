@@ -1,10 +1,16 @@
 import "../styles/ItemContainer.css";
 import ItemCount from "../components/ItemCount.jsx";
-import { Box,Button } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { useState, useEffect } from "react";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
 
 const ItemContainer = ({ filtro }) => {
+
+
+
+
+
+  const [cartItems,setCartItems] = useState([])
   const [productos, setProductos] = useState([]);
   const [error, setError] = useState(null);
 
@@ -30,11 +36,6 @@ const ItemContainer = ({ filtro }) => {
   return (
     <>
       <Box
-        sx={{
-          // backgroundColor: "white",
-          borderRadius: "6px",
-          border: "1.5px solid #E7E8E8",
-        }}
         className="gridContainer gap-3  p-3 "
       >
         {productos
@@ -48,7 +49,7 @@ const ItemContainer = ({ filtro }) => {
               key={item.item_id}
               style={{
                 cursor: "pointer",
-                marginBottom: "20px"
+                marginBottom: "20px",
               }}
             >
               <div className="containerImg">
@@ -65,7 +66,7 @@ const ItemContainer = ({ filtro }) => {
                 >
                   {item.descriptionItem}
                 </p>
-                <div className="d-flex align-items-center justify-content-between">
+                <div className="d-flex flex-column  justify-content-between">
                   <div>
                     <p className="subdescription" key={item.subdescription}>
                       {item.subdescription}
@@ -76,20 +77,18 @@ const ItemContainer = ({ filtro }) => {
                   </div>
 
                   <div>
-                    <ItemCount
+                     <ItemCount
+                      descriptionItem={item.descriptionItem}
+                      priceItem={item.price}
                       initial={0}
                       stock={item.stockItem}
                       onAdd={(count) => console.log("Cantidad agregada", count)}
-                    ></ItemCount>
+                    ></ItemCount> 
                   </div>
                 </div>
-                <Button sx={{
-                  width: "100%"
-                  
-                }}
-                startIcon={<ShoppingCartIcon/>}
-                variant="outlined"
-                >ADD TO CART</Button>
+                {/* Aqui sale otro componente */}
+
+
               </div>
             </div>
           ))}

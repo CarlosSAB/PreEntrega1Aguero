@@ -71,7 +71,7 @@ const FilterCategories = ({ itemCategories }) => {
               {itemCategories.map((item) => {
                 return (
                   <ListItemButton
-                    key={item.id}
+                    key={item.name}
                     selected={item.category === selectedCategory}
                     onClick={() => handleCategorySelect(item.category)}
                     component={NavLink}
