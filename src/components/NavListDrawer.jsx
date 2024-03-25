@@ -9,7 +9,7 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 
 import * as React from 'react';
 
-
+import HomeIcon from '@mui/icons-material/Home';
 
 import Collapse from '@mui/material/Collapse';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
@@ -32,7 +32,14 @@ const NavListDrawer = () => {
             }}>
                 <nav>
                     <List>
-
+                    <ListItemButton
+                        component={NavLink}
+                        to="/">
+                            <ListItemIcon>
+                                <HomeIcon></HomeIcon>
+                            </ListItemIcon>
+                            <ListItemText primary="Home"></ListItemText>
+                        </ListItemButton>
                         <ListItemButton onClick={handleClick}>
                             <ListItemIcon>
                                 <StoreIcon />
@@ -44,7 +51,7 @@ const NavListDrawer = () => {
                             <List component="div" disablePadding>
                                 <ListItemButton sx={{ pl: 4 }}
                                     component={NavLink}
-                                    to="/All">
+                                    to="/products">
                                     <ListItemIcon>
                                         <MonetizationOnIcon />
                                     </ListItemIcon>
@@ -53,7 +60,7 @@ const NavListDrawer = () => {
 
                                 <ListItemButton sx={{ pl: 4 }}
                                     component={NavLink}
-                                    to="/calzado">
+                                    to="/products/SHOES">
                                     <ListItemIcon>
                                         <MonetizationOnIcon />
                                     </ListItemIcon>
@@ -62,7 +69,7 @@ const NavListDrawer = () => {
 
                                 <ListItemButton sx={{ pl: 4 }}
                                     component={NavLink}
-                                    to="/tshirt">
+                                    to="/products/TSHIRT">
                                     <ListItemIcon>
                                         <MonetizationOnIcon />
                                     </ListItemIcon>
@@ -78,7 +85,9 @@ const NavListDrawer = () => {
                             <ListItemText primary="Carrito"></ListItemText>
                         </ListItemButton>
                         <Divider></Divider>
-                        <ListItemButton>
+                        <ListItemButton
+                        component={NavLink}
+                        to="/contact">
                             <ListItemIcon>
                                 <SupportAgentIcon></SupportAgentIcon>
                             </ListItemIcon>

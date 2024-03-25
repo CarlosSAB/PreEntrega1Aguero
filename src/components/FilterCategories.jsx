@@ -36,7 +36,7 @@ const FilterCategories = ({ itemCategories }) => {
       <Box
         sx={{
           minWidth: "225px",
-          marginTop: "5rem"
+          marginTop: "8rem"
         }}
       >
 

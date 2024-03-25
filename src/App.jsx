@@ -1,30 +1,33 @@
 import "./App.css";
-import Tshirt from "./pages/Tshirt.jsx";
-import Calzado from "./pages/Calzado.jsx";
-import All from "./pages/All.jsx";
 import { Routes, Route } from "react-router-dom";
 import NavbarUI from "./components/NavbarUI.jsx";
-import ItemCount from "./components/ItemCount.jsx";
 import FilterCategories from "./components/FilterCategories.jsx";
+import Products from "./pages/Products.jsx";
+import Home from "./pages/Home.jsx";
+import ProductPage from "./pages/ProductPage.jsx";
+import Calzado from "./pages/Calzado.jsx";
+import Contact from "./pages/Contact.jsx";
 
+import { ProductProvider } from "./context/ProductContext.jsx";
+import Tshirt from "./pages/Tshirt.jsx";
 const itemCategories = [
   {
     name: "All",
-    path: "/All",
+    path: "/products",
     category: "ALL",
     title: "EXPLORE",
     subtitle: "Our Collection",
   },
   {
     name: "Calzado",
-    path: "/calzado",
+    path: "/products/SHOES",
     category: "SHOES",
     title: "SHOES FOR MEN ",
     subtitle: "S2TRUCK Collection",
   },
   {
     name: "T-Shirt",
-    path: "/tshirt",
+    path: "/products/TSHIRT",
     category: "TSHIRT",
     title: " T-SHIRT FOR MEN",
     subtitle: "T-Shirt in tendence",
@@ -34,17 +37,53 @@ const itemCategories = [
 function App() {
   return (
     <>
-      <NavbarUI></NavbarUI>
-      <div className="d-flex flex-row  gap-4 pb-5 px-5">
-        <FilterCategories itemCategories={itemCategories}></FilterCategories>
-        
-        <Routes>
-          <Route path="/" element={<All  message={itemCategories[0]} itemCategories={itemCategories}/>}/>
-          <Route path="/All" element={<All message={itemCategories[0]} itemCategories={itemCategories}/>}/>
-          <Route path="/calzado" element={<Calzado message={itemCategories[1]} itemCategories={itemCategories}></Calzado>} /> 
-          <Route path="/tshirt" element={<Tshirt message={itemCategories[2]} itemCategories={itemCategories}></Tshirt>}  /> 
-        </Routes>
-      </div>
+      <ProductProvider>
+        <NavbarUI></NavbarUI>
+
+        <div className="d-flex flex-row  gap-4  px-5">
+          <Routes>
+            <Route path="/" element={<Home></Home>} />
+            <Route
+              path="/products"
+              element={
+                <>
+                  <FilterCategories
+                    itemCategories={itemCategories}
+                  ></FilterCategories>
+                  <Products></Products>
+                </>
+              }
+            />
+            <Route
+              path="/products/:category/:item_id"
+              element={<ProductPage />}
+            />
+            <Route
+              path="/products/SHOES"
+              element={
+                <>
+                  <FilterCategories
+                    itemCategories={itemCategories}
+                  ></FilterCategories>
+                  <Calzado />
+                </>
+              }
+            />
+            <Route
+              path="/products/TSHIRT"
+              element={
+                <>
+                  <FilterCategories
+                    itemCategories={itemCategories}
+                  ></FilterCategories>
+                  <Tshirt />
+                </>
+              }
+            />
+            <Route path="/contact" element={<Contact></Contact>}></Route>
+          </Routes>
+        </div>
+      </ProductProvider>
     </>
   );
 }

@@ -1,16 +1,17 @@
-import ItemContainer from "../components/ItemContainer";
-import Titulo from "../components/Titulo.jsx";
+
+import { Box } from "@mui/material";
+import ItemProduct from "../components/ItemProduct";
 
 
-
-
-const Calzado = ({ message, itemCategories }) => {
+const Calzado = () => {
   return (
     <>
-      <div className="d-flex flex-column w-100">
-        <Titulo message={message}></Titulo>
-        <ItemContainer filtro="SHOES" />
-      </div>
+      <Box className=" w-100">
+      <h1 className="text-center py-5">SHOES</h1>
+        <div className="d-flex flex-row align-items-start">
+          <ItemProduct filtro="SHOES"></ItemProduct>
+        </div>
+      </Box>
     </>
   );
 };

@@ -1,56 +1,34 @@
+import { useContext } from "react";
 import "../styles/ItemContainer.css";
-import ItemCount from "../components/ItemCount.jsx";
 import { Box, Button } from "@mui/material";
-import { useState, useEffect } from "react";
-
-
-const ItemContainer = ({ filtro }) => {
-
+import { ProductContext } from "../context/ProductContext";
+import { Link, NavLink } from "react-router-dom";
 
 
 
+const ItemProduct = ({filtro}) => {
 
-  const [cartItems,setCartItems] = useState([])
-  const [productos, setProductos] = useState([]);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const url = "http://localhost:3000/products";
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error("Error al cargar los datos: " + response.statusText);
-        }
-        const data = await response.json();
-        setProductos(data);
-      } catch (error) {
-        setError("Se ha producido un error: " + error.message);
-        console.error(error); // Imprimir el error detallado en la consola
-      }
-    };
-
-    fetchData();
-  }, []);
-
+  const { products } = useContext(ProductContext)
+ 
   return (
     <>
-      <Box
-        className="gridContainer gap-3  p-3 "
-      >
-        {productos
+      <Box className="gridContainer gap-3  p-3 ">
+        
+        {products
 
           .filter(
             (item) => !filtro || filtro === "TODO" || item.category === filtro
           )
           .map((item) => (
-            <div
+            <NavLink
               className="cardContainer"
               key={item.item_id}
               style={{
                 cursor: "pointer",
                 marginBottom: "20px",
               }}
+              component={NavLink}
+              to={`/products/${item.category}/${item.item_id}`}
             >
               <div className="containerImg">
                 <img
@@ -75,26 +53,16 @@ const ItemContainer = ({ filtro }) => {
                       S/.{item.price}
                     </p>
                   </div>
-
-                  <div>
-                     <ItemCount
-                      descriptionItem={item.descriptionItem}
-                      priceItem={item.price}
-                      initial={0}
-                      stock={item.stockItem}
-                      onAdd={(count) => console.log("Cantidad agregada", count)}
-                    ></ItemCount> 
-                  </div>
                 </div>
                 {/* Aqui sale otro componente */}
 
 
               </div>
-            </div>
+            </NavLink>
           ))}
       </Box>
     </>
   );
 };
 
-export default ItemContainer;
+export default ItemProduct;

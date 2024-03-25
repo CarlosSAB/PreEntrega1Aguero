@@ -46,6 +46,8 @@ const NavbarUI = () => {
               sx={{
                 color: "black",
               }}
+              component={NavLink}
+              to="/"
             >
               Home
             </Button>
@@ -54,14 +56,16 @@ const NavbarUI = () => {
                 color: "black",
               }}
               component={NavLink}
-              to="/All"
+              to="/products"
             >
-              ALL PRODUCTS
+              PRODUCTS
             </Button>
             <Button
               sx={{
                 color: "black",
               }}
+              component={NavLink}
+              to="/contact"
             >
               CONTACT
             </Button>
