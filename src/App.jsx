@@ -40,7 +40,7 @@ function App() {
       <ProductProvider>
         <NavbarUI></NavbarUI>
 
-        <div className="d-flex flex-row  gap-4  px-5">
+        <div className="d-flex flex-row  gap-4  px-5 contenedor">
           <Routes>
             <Route path="/" element={<Home></Home>} />
             <Route

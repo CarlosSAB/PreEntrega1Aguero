@@ -15,7 +15,7 @@ const NavbarUI = () => {
       <AppBar position="sticky">
         <Toolbar
           variant="dense"
-          sx={{ minHeight: 60, height: 50, backgroundColor: "white" }}
+          sx={{ minHeight: 50, height: 50, backgroundColor: "white" }}
           className="d-flex justify-content-between"
         >
           <div className="d-flex align-items-center">
